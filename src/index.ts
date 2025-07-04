@@ -1,7 +1,7 @@
 import express from "express";
 import customerRoutes from "./customer/customer.routes";
-import bookingRoutes from "./booking/booking.routes"; // Verify the file exists at this path
-import carRoutes from "./car/car.routes";
+import bookingRoutes from "./booking/booking.routes"; 
+import carRoutes from "./car/car.routes"; 
 import paymentRoutes from "./payment/payment.routes";
 import reservationRoutes from "./reservation/reservation.routes";       
 import locationRoutes from "./location/location.routes";

@@ -6,7 +6,7 @@ import {
   updatePaymentController,
   deletePaymentController,
 } from "./payment.controller";
-import { adminRoleAuth, bothRoleAuth, userRoleAuth } from "../middleware/bearAuth";
+// import { adminRoleAuth, bothRoleAuth, userRoleAuth } from "../middleware/bearAuth";
 
 const paymentRoutes = (app: Express) => {
   app.post("/payments", createPaymentController);

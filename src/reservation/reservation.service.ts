@@ -1,7 +1,7 @@
-import db from "../Drizzle/db";
-import { ReservationTable } from "../Drizzle/schema";
+import db from "../Drizzle/db.js";
+import { ReservationTable } from "../Drizzle/schema.js";
 import { eq, sql } from "drizzle-orm";
-import { TIReservation } from "../Drizzle/schema";
+import { TIReservation } from "../Drizzle/schema.js";
 
 // Create Reservation
 export const createReservationService = async (data: typeof ReservationTable.$inferInsert) => {

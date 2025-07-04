@@ -1,5 +1,9 @@
 // Removed duplicate import of 'relations'
 import { varchar, serial, pgTable, decimal, integer, boolean, date } from "drizzle-orm/pg-core";
+import { relations } from "drizzle-orm";
+import { pgEnum } from "drizzle-orm/pg-core";
+
+
 export const RoleEnum =pgEnum("role",
      ["admin", "user"]);
 
@@ -83,8 +87,7 @@ export const InsuranceTable = pgTable("insurance", {
 });
 
 // User Table Relationships
-import { relations } from "drizzle-orm";
-import { pgEnum } from "drizzle-orm/pg-core";
+
 export type TIUser = typeof UsersTable.$inferSelect;
 
 // User Table
